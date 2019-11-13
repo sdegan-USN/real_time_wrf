@@ -1,0 +1,93 @@
+Delivered-To: mstuefer@alaska.edu
+Received: by 2002:a2e:4744:0:0:0:0:0 with SMTP id u65-v6csp5073483lja;
+        Wed, 20 Feb 2019 06:57:22 -0800 (PST)
+X-Google-Smtp-Source: AHgI3IZJ38kAZ+JfZfJr9xektB1xBED2Hm56FRgp20gtooa9B86QEdKN3GuOFWrqoQTthz+TsoVA
+X-Received: by 2002:a02:240d:: with SMTP id f13mr19488076jaa.105.1550674642727;
+        Wed, 20 Feb 2019 06:57:22 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1550674642; cv=none;
+        d=google.com; s=arc-20160816;
+        b=jmqR1TUYSKVtmPMDyL4JyU6xR9caab71vCmyJvlz/gnUwSLiQL/DeCWyV9sTHuNei8
+         ceWqH+UFG8QtUdRW5maned6YlrFzmyf5THExEvgeiGjt2hWJN2TD/ZyAa/FhQq5FZjCi
+         Dlp0pkAVDfzYxjy5v0e2oBtUE5XO2QwXwS35rWQllw7IzYmiZ1lcFhuduT3NXycavRr9
+         5KOKPr3/pIBKKguaM/cb5bfcqlsh70v4mq0Rve/oL9oxF3LCEpBAwkEnnuwtgnNy47qr
+         Pfe+Z5MjxvqDccA2PPEn93sUf6QAYMXIFYrxjY/3UubA5h/DZIe30gCZPAMmm8LM7MG+
+         jAow==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:subject:to:from;
+        bh=X7FdkGYm8eso+oeP1fe6RjmS87u8ndgsRMfm6H1VRYg=;
+        b=eRLuTu0d5V7ohPluhIo9MVe+jlTIVV1DRTQYleVd81Fhzr/SSfDAm5H9Ox/G0gAqXv
+         qHTHWvPYuU5vNXE5b8G5uKv0qjeyQtyYhCCGySgYH/uG3DL0ZVQmg+Ynh+pbTW7OwPhu
+         z1hJagYq5b1NazeBv66AZFbJh97SJDS8/y5NzqMjilL2diXy6xGrqViaAMLF+f9QF3bB
+         5ueCogNW7whW4F79vq5cecplJ+OMiZbTVUJ7HAvW7HJ141s9Z/sbeypx9mSnuvnfuKcB
+         Iu4cKH8MTDZI3q79jY4QRqv5Ag+D+KBFMjfLqasxlCLfMFnexDbnn6JCfopmHhLp0vhV
+         EtVA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of volcano.alerts-noreply@ssec.wisc.edu designates 2607:f388:1090:0:a236:9fff:fe43:ee0a as permitted sender) smtp.mailfrom=volcano.alerts-noreply@ssec.wisc.edu;
+       dmarc=pass (p=QUARANTINE sp=NONE dis=NONE) header.from=ssec.wisc.edu
+Return-Path: <volcano.alerts-noreply@ssec.wisc.edu>
+Received: from clast.ssec.wisc.edu (clast-v6.ssec.wisc.edu. [2607:f388:1090:0:a236:9fff:fe43:ee0a])
+        by mx.google.com with ESMTP id u73si763664ita.8.2019.02.20.06.57.21
+        for <mstuefer@alaska.edu>;
+        Wed, 20 Feb 2019 06:57:22 -0800 (PST)
+Received-SPF: pass (google.com: domain of volcano.alerts-noreply@ssec.wisc.edu designates 2607:f388:1090:0:a236:9fff:fe43:ee0a as permitted sender) client-ip=2607:f388:1090:0:a236:9fff:fe43:ee0a;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of volcano.alerts-noreply@ssec.wisc.edu designates 2607:f388:1090:0:a236:9fff:fe43:ee0a as permitted sender) smtp.mailfrom=volcano.alerts-noreply@ssec.wisc.edu;
+       dmarc=pass (p=QUARANTINE sp=NONE dis=NONE) header.from=ssec.wisc.edu
+Received: from clast.ssec.wisc.edu (localhost [IPv6:::1])
+	by clast.ssec.wisc.edu (Postfix) with ESMTP id B0180123243
+	for <mstuefer@alaska.edu>; Wed, 20 Feb 2019 14:57:21 +0000 (UTC)
+From: <volcano.alerts-noreply@ssec.wisc.edu>
+To: <mstuefer@alaska.edu>
+Subject: NOAA/CIMSS VOLCAT Alert
+Message-Id: <20190220145721.B0180123243@clast.ssec.wisc.edu>
+Date: Wed, 20 Feb 2019 14:57:21 +0000 (UTC)
+
+@**********VOLCANIC ALERTS**********
+STARTING DATE/TIME OF IMAGE: 2019-02-20 14:07:28 [UTC]
+PRODUCTION DATE/TIME OF ALERT: 2019-02-20 14:55:04 [UTC]
+PRIMARY INSTRUMENT: NPP VIIRS
+WMO SPACECRAFT ID: 342
+LOCATION/ORBIT: LEO
+L1 FILE: SVM14_npp_d20190220_t1407276_e1418501_b37912_c20190220144747103143_cspp_dev.h5
+VOLCANO DATABASE: /data/common/volcat-ancillary//alerts/Volcat_Alert_Volcano_Database_Dec28_2017_205750.txt
+NUMBER OF ASH CLOUD ALERTS: 1
+NUMBER OF VOLCANIC Cb ALERTS: 0
+NUMBER OF VOLCANIC THERMAL ANOMALY ALERTS: 0
+NUMBER OF SO2 CLOUD ALERTS: 0
+
+REPORT WITH IMAGES:
+https://volcano.ssec.wisc.edu/alert/report/47503
+
+---------------------------------------------
+POSSIBLE VOLCANIC ASH CLOUD FOUND
+Alert Status: New Volcanic Feature
+Alert Confidence: HIGH
+Identification Method: Plume
+Latitude of Radiative Center: 52.83 [degrees]
+Longitude of Radiative Center: -169.94 [degrees]
+Mean Object Date/Time: 2019-02-20 14:18:08 [UTC]
+Mean Viewing Angle: 46.8 [degrees]
+Mean Solar Zenith Angle: 126.7 [degrees]
+Nearby Volcanoes (meeting alert criteria):
+                     Cleveland( 0.0 km)
+                      Carlisle(10.7 km)
+                          Tana(11.7 km)
+                       Herbert(14.6 km)
+                       Kagamil(22.4 km)
+Median Probability of Pixels: 97.67 [%]
+Maximum Height [AMSL]: 1.3 [km] (4357 [ft])
+90th Percentile Height [AMSL]: 1.2 [km] (3876 [ft])
+Mean Tropopause Height [AMSL]: 9.6 [km] (31609 [ft])
+Total Mass:  0.000020 [Tg]
+Median Effective Particle Radius: 2.3 [um]
+Total Area: 11.9 [km^2]
+
+
+Country/Countries: United States
+Volcanic Region(s): Alaska
+Volcanic Subregion(s): Aleutian Islands
+VAAC Region(s) of Nearby Volcanoes: Anchorage
+FIR Region(s) of Nearby Volcanoes: Unknown
+---------------------------------------------
+
+
