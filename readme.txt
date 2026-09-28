@@ -26,6 +26,5 @@ This is evident in the scripts.
 
 For questions on configuration, e-mail Sean Egan at:
 
-sean.d.egan@navy.mil
-sean.egan@navy.smil.mil
+sean@theinformed.org
 sdegan@alaska.edu
