@@ -1,5 +1,5 @@
 The files contained in these directories may be used 
-to modify the Weather Research Forecasting with Chemsitry
+to modify the Weather Research Forecasting with Chemistry
 (WRF-CHEM) model to be run in near real time using 10
 model members with 5 heights and 2 particle sizes. 
 
@@ -10,7 +10,7 @@ The scripts in the domain_generator folder can be used
 to automate WRF-Chem and have it autoinitialize when an 
 alert is received.
 
-The chem directory contains editied Fortran code that 
+The chem directory contains edited Fortran code that
 enables the use of 5 heights (module_volc_emiss_driver.F)
 and 2 particle sizes (module_vash_settling.F). 
 
