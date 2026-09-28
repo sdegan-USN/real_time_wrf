@@ -27,4 +27,5 @@ This is evident in the scripts.
 For questions on configuration, e-mail Sean Egan at:
 
 sean@theinformed.org
+sean.d.egan3.mil@us.navy.mil
 sdegan@alaska.edu
